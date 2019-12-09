@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
 using R5T.Anactorium;
+using R5T.Lincoln;
 
 using R5T.Portsmouth.Configuration;
 
@@ -18,7 +19,19 @@ namespace R5T.Portsmouth.Construction
     {
         static void Main(string[] args)
         {
-            Program.TryGetDatabaseConfiguration();
+            //Program.TryGetDatabaseConfiguration();
+            Program.TryGetDatabaseConnectionString();
+        }
+
+        private static void TryGetDatabaseConnectionString()
+        {
+            var serviceProvider = Program.GetServiceProvider();
+
+            var connectionStringProvider = serviceProvider.GetRequiredService<IConnectionStringProvider>();
+
+            var connectionString = connectionStringProvider.GetConnectionString();
+
+            Console.WriteLine($"Connection string: {connectionString})");
         }
 
         private static void TryGetDatabaseConfiguration()
@@ -49,6 +62,7 @@ namespace R5T.Portsmouth.Construction
                 .ConfigureOptions<DatabaseConfigurationConfigureOptions>()
                 .Configure<RawDatabaseServerAuthentications>(configuration.GetSection(nameof(R5T.Anactorium.Raw.DatabaseServerAuthentications)))
                 .ConfigureOptions<DatabaseServerAuthenticationsConfigureOptions>()
+                .AddSingleton<IConnectionStringProvider, StandardConnectionStringProvider>()
                 .BuildServiceProvider();
 
             return serviceProvider;
