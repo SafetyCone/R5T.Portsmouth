@@ -10,6 +10,7 @@
     <ProjectReference Include="..\..\..\R5T.Knossos\source\R5T.Knossos\R5T.Knossos.csproj" />
     <ProjectReference Include="..\..\..\R5T.Lincoln.Base\source\R5T.Lincoln.Base\R5T.Lincoln.Base.csproj" />
     <ProjectReference Include="..\..\..\R5T.Magyar\source\R5T.Magyar\R5T.Magyar.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Sardinia\source\R5T.Sardinia\R5T.Sardinia.csproj" />
     <ProjectReference Include="..\..\..\R5T.Venetia\source\R5T.Venetia\R5T.Venetia.csproj" />
   </ItemGroup>
 </Project>
