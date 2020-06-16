@@ -26,7 +26,7 @@ namespace R5T.Portsmouth.Configuration
                     break;
 
                 default:
-                    throw new Exception(EnumHelper.UnexpectedEnumerationValueMessage(databaseConfiguration.LocalOrRemote));
+                    throw new Exception(EnumerationHelper.UnexpectedEnumerationValueMessage(databaseConfiguration.LocalOrRemote));
             }
 
             return connectionString;
