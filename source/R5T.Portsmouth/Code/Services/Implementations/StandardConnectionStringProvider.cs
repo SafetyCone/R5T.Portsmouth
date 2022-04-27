@@ -1,16 +1,16 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.Options;
 
 using R5T.Anactorium;
 using R5T.Lincoln;
 
-using R5T.Portsmouth.Configuration;
+using R5T.Portsmouth.Configuration;using R5T.T0064;
 
 
 namespace R5T.Portsmouth
-{
-    public class StandardConnectionStringProvider : IConnectionStringProvider
+{[ServiceImplementationMarker]
+    public class StandardConnectionStringProvider : IConnectionStringProvider,IServiceImplementation
     {
         private IOptions<DatabaseConfiguration> DatabaseConfiguration { get; }
         private IOptions<DatabaseServerAuthentications> DatabaseServerAuthentications { get; }

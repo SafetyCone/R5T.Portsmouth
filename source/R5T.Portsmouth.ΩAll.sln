@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Portsmouth.Construction
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Portsmouth.Testing", "R5T.Portsmouth.Testing\R5T.Portsmouth.Testing.csproj", "{BDBE6B48-3324-47D1-8B08-24AE06CEAD12}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Dependencies", "_Dependencies", "{95B35CB3-B89C-4332-8824-2D7B4B6799D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.T0064", "..\..\R5T.T0064\source\R5T.T0064\R5T.T0064.csproj", "{732830D3-9172-49FB-910D-A70EF85E8307}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +62,20 @@ Global
 		{BDBE6B48-3324-47D1-8B08-24AE06CEAD12}.Release|x64.Build.0 = Release|Any CPU
 		{BDBE6B48-3324-47D1-8B08-24AE06CEAD12}.Release|x86.ActiveCfg = Release|Any CPU
 		{BDBE6B48-3324-47D1-8B08-24AE06CEAD12}.Release|x86.Build.0 = Release|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Debug|x64.Build.0 = Debug|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Debug|x86.Build.0 = Debug|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Release|x64.ActiveCfg = Release|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Release|x64.Build.0 = Release|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Release|x86.ActiveCfg = Release|Any CPU
+		{732830D3-9172-49FB-910D-A70EF85E8307}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{732830D3-9172-49FB-910D-A70EF85E8307} = {95B35CB3-B89C-4332-8824-2D7B4B6799D0}
 	EndGlobalSection
 EndGlobal
